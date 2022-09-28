@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Mathmatical_operation {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the Marks of Maths:");
+        float math = sc.nextInt();
+        System.out.println("Enter the Marks of Science:");
+        float sci = sc.nextInt();
+        System.out.println("Enter the Marks of English:");
+        float eng = sc.nextInt();
+        System.out.println("Enter the Marks of Hndi:");
+        float hindi = sc.nextInt();
+        System.out.println("Enter the Marks of Sanskrit:");
+        float sans = sc.nextInt();
+        float total = math + sci + eng + hindi + sans;
+        float avg = total / 5;
+        System.out.println("Average marks" + avg);
+        float per = (total * 100) / 500;
+        System.out.println("Percentage=" + per + "%");
+        sc.close();
+
+    }
+
+}
