@@ -1,0 +1,19 @@
+package com.company;
+import java.util.Scanner;
+public class practice42 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number that u want to print:");
+        int n = sc.nextInt();
+        System.out.println("Enter Starting point:");
+        int i = sc.nextInt();
+        do
+        {
+            if (i%2==0)
+            {
+                System.out.println("\t"+i);
+            }
+          i++;
+        }while (i<=n);
+    }
+}
