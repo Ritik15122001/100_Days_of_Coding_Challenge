@@ -1,0 +1,218 @@
+package com.company;
+import java.util.Scanner;
+class starpat{
+     void rec(int n){
+         for (int i=0; i<n; i++){
+             for (int j=0;j<n;j++){
+                 System.out.print("*");
+             }
+             System.out.print("\n");
+         }
+         System.out.println();
+     }
+     void blankrec(int n){
+         for (int i=1; i<=n; i++){
+             for (int j=1;j<=n;j++){
+                 if(i==1||i==n||j==1||j==n){
+                     System.out.print("*");
+                 }else {
+                     System.out.print(" ");
+                 }
+
+             }
+             System.out.print("\n");
+         }
+     }
+     void rhombus(int n){
+         for (int i=5; i>0; i--){
+             for (int j=i;j>0;j--){
+                 System.out.print(" ");
+             }
+             for (int k=0;k<n;k++){
+                 System.out.print("*");
+             }
+             System.out.print("\n");
+
+         }
+         System.out.println();
+     }
+    void blankrhombus(int n){
+        for (int i=5; i>0; i--){
+            for (int j=i;j>0;j--){
+                System.out.print(" ");
+            }
+            for (int k=1;k<=n;k++){
+                if (i==5||i==1||k==1||k==n) {
+                    System.out.print("*");
+                }else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.print("\n");
+
+        }
+        System.out.println();
+    }
+    void rhombus1(int n){
+        for (int i=0; i<n; i++){
+            for (int j=0;j<i;j++){
+                System.out.print(" ");
+            }
+            for (int k=0;k<n;k++){
+                System.out.print("*");
+            }
+            System.out.print("\n");
+        }
+        System.out.println();
+    }
+    void blankrhombus1(int n){
+        for (int i=1; i<=n; i++){
+            for (int j=1;j<i;j++){
+                System.out.print(" ");
+            }
+            for (int k=0;k<=n;k++){
+                if(i==1||i==n||k==0||k==n) {
+                    System.out.print("*");
+                }else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.print("\n");
+        }
+        System.out.println();
+    }
+    void triangle(int n){
+        for (int i=0; i<n; i++){
+            for (int j=0;j<i;j++){
+                System.out.print("*");
+            }
+            System.out.print("\n");
+        }
+        System.out.println();
+    }
+    void hollowtriangle(int n){
+        for (int i=1; i<=n; i++){
+            for (int j=1;j<=i;j++){
+                if (i==1||j==i||i==n||j==1){
+                    System.out.print("*");
+                }else {
+                    System.out.print(" ");
+                }
+
+            }
+            System.out.print("\n");
+        }
+        System.out.println();
+    }
+    void mirrortriangle(int n){
+        for (int i=1; i<=n; i++){
+            for (int j=n;j>i;j--){
+                System.out.print(" ");
+            }
+            for (int k=0;k<i;k++){
+                System.out.print("*");
+            }
+            System.out.print("\n");
+        }
+        System.out.println();
+    }
+    void hollowmirrortriangle(int n){
+        for (int i=1; i<=n; i++){
+            for (int j=n;j>i;j--){
+                System.out.print(" ");
+            }
+            for (int k=1;k<=i;k++){
+                if (i==1||k==i||i==n||k==1) {
+                    System.out.print("*");
+                }else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.print("\n");
+        }
+        System.out.println();
+    }
+    void invertedtriangle(int n) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = i; j <= n; j++) {
+                System.out.print("*");
+            }
+            System.out.print("\n");
+        }
+        System.out.println();
+    }
+    void invertedtri2(int n){
+         for (int i=1;i<=n;i++){
+             for (int j=1;j<i;j++){
+                 System.out.print(" ");
+             }
+             for (int j=i;j<=n;j++){
+                 System.out.print("*");
+             }
+             System.out.print("\n");
+         }
+    }
+    void hollowinvertedtri(int n){
+        for (int i = 1; i <= n; i++) {
+            for (int j = n; j >= i; j--) {
+                if (i==1||j==i||j==n||j==1) {
+                    System.out.print("*");
+                }else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.print("\n");
+        }
+        System.out.println();
+    }
+    void hollowinvertedtri2(int n){
+        for (int i=1;i<=n;i++){
+            for (int k=1;k<i;k++){
+                System.out.print(" ");
+            }
+            for (int j=i;j<=n;j++){
+                if (i==1||j==i||j==n||j==1) {
+                    System.out.print("*");
+                }else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.print("\n");
+        }
+    }
+    void pyramid(int n){
+         for (int i=0;i<n;i++){
+             for (int j=5;j>0;j++){
+                 System.out.print(" ");
+             }
+          for (int k=0;k<(i*2)-1;k++){
+              System.out.print("*");
+          }
+             System.out.println();
+         }
+    }
+
+    }
+public class starpat1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter any Number:");
+        int  n = sc.nextInt();
+        starpat obj= new starpat();
+        obj.rec(n);
+        obj.blankrec(n);
+        obj.rhombus(n);
+        obj.blankrhombus(n);
+        obj.rhombus1(n);
+        obj.blankrhombus1(n);
+          obj.triangle(n);
+          obj.hollowtriangle(n);
+        obj.mirrortriangle(n);
+        obj.hollowmirrortriangle(n);
+        obj.invertedtriangle(n);
+        obj.invertedtri2(n);
+        obj.hollowinvertedtri(n);
+        obj.hollowinvertedtri2(n);
+
+    }
+}
