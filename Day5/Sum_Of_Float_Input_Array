@@ -1,0 +1,22 @@
+//Input test case 
+// Sample input :- 1.2 1.3 1.4 1.5 1.6 
+//samplle Output :- 7.0
+
+package com.company;
+import java.util.Scanner;
+public class practice63 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        float a[] = new float[5];
+        float sum=0;
+        for (int i=0;i<5;i++)
+        {
+            System.out.println("Enter the number:");
+             a[i] = sc.nextFloat();
+            sum=sum+a[i];
+        }
+
+        System.out.println(sum);
+
+    }
+}
