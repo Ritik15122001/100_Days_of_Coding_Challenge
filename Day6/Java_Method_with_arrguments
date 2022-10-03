@@ -1,0 +1,22 @@
+//Input Test Case:-
+//Sample Input:- 12 16
+//expexted Output:- 14
+
+
+package com.company;
+import java.util.Scanner;
+public class practice74 {
+    static int avg(int x,int y)
+    {
+        int avg = (x+y)/2;
+        return avg;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter any two  numbers:");
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        System.out.println("the avg of the number is "+avg(a,b));
+    }
+}
