@@ -1,0 +1,25 @@
+//Input Test case:-
+//Sample Input:- 12 13 
+//Expected Output:- 25
+
+
+package com.company;
+import java.util.Scanner;
+public class practice73 {
+         int add(int x,int y)
+        {
+
+            int sum = x+y;
+            return sum;
+        }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter any two numbers  number");
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        practice73 obj = new practice73();
+        System.out.println("the sum of the number:"+obj.add(a,b));
+    }
+
+}
