@@ -1,0 +1,48 @@
+//Input Test Case:-
+//Sample Input in Array1:-  1 2 3 4 5 6 
+//Sample Input in Array2:-  0 9 8 7 6 5
+/*Expected Output:- For First Array
+                    1 2 3 
+                    4 5 6
+                    For Second Array:-
+                    0 9 8 
+                    7 6 5 
+*/
+
+package com.company;
+import java.util.Scanner;
+public class practice66 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a[][] = new int[2][3];
+        int b[][] = new int[2][3];
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < 3; j++) {
+                System.out.println("enter the elements for first array:");
+                a[i][j] = sc.nextInt();
+            }
+        }
+
+        System.out.println("for second array:");
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < 3; j++) {
+                System.out.println("enter the elements for Second array:");
+                b[i][j] = sc.nextInt();
+            }
+        }
+        System.out.println("for first array:-");
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < 3; j++) {
+                System.out.print("\t" + a[i][j]);
+            }
+            System.out.println("\n");
+        }
+        System.out.println("for Second array:-");
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < 3; j++) {
+                System.out.print("\t" + b[i][j]);
+            }
+            System.out.println("\n");
+        }
+    }
+}
