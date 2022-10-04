@@ -1,0 +1,26 @@
+package com.company;
+class employee {
+    int id;
+    String name;
+    public void  printname()
+    {
+         System.out.println(name);
+        System.out.println(id);
+    }
+        }
+public class practice86 {
+    public static void main(String[] args) {
+
+
+        employee ritik = new employee();
+        employee sachin = new employee();
+        ritik.id = 101;
+        ritik.name = "Ritik";
+        ritik.printname();
+        sachin.id=102;
+        sachin.name = "Sachin Ranjan";
+        sachin.printname();
+
+    }
+
+}
