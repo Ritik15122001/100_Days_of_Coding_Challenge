@@ -1,0 +1,31 @@
+package com.company;
+
+import java.util.Scanner;
+
+class staff{
+    String name;
+    int sallary;
+    public void getname()
+    {
+        System.out.println(name);
+    }
+    public void getsallary()
+    {
+        System.out.println(sallary);
+    }
+
+}
+public class practice87 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        staff emp1 = new staff();
+        System.out.println("enter the staff name:");
+        emp1.name = sc.nextLine();
+        System.out.println("enter your sallary:");
+        emp1.sallary = sc.nextInt();
+        System.out.println("enter your name:");
+        emp1.getname();
+        emp1.getsallary();
+
+    }
+}
