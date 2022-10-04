@@ -1,0 +1,32 @@
+package com.company;
+
+import java.util.Scanner;
+
+class cellphone{
+    String name;
+    public void calling()
+    {
+        System.out.println("calling.....");
+    }
+    public void vibrating()
+    {
+        System.out.println("vabrating.....");
+    }
+    public void Ringing()
+    {
+        System.out.println("ringing......");
+    }
+}
+public class practice88 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        cellphone asus = new cellphone();
+        System.out.println("Enter name for calling:");
+         asus.name = sc.nextLine();
+       asus. calling();
+       asus.vibrating();
+       asus.Ringing();
+
+
+    }
+}
