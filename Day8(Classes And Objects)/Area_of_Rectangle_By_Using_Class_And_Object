@@ -2,23 +2,26 @@ package com.company;
 
 import java.util.Scanner;
 
-class circle{
-    int radius;
+class rectangle{
+    int length;
+    int breadth;
     public void area()
     {
-        System.out.println("the area of the circle "+ 3.14*radius*radius);
+        System.out.println("the area of the rectangle "+length*breadth);
     }
     public void perimeter()
     {
-        System.out.println("the perimeter of the circle "+2*3.14*radius);
+
+        System.out.println("the perimeter of the rectangle "+2*(length+breadth));
     }
 }
-public class practice92 {
+public class practice90 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        circle first = new circle();
-        System.out.println("enter the radius of the circle:");
-        first.radius = sc.nextInt();
+        rectangle first = new rectangle();
+        System.out.println("enter the length and breadth:");
+        first.length=sc.nextInt();
+        first.breadth=sc.nextInt();
         first.area();
         first.perimeter();
     }
