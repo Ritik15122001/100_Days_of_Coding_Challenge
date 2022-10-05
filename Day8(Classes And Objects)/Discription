@@ -1,0 +1,28 @@
+Problem:- How To find The Area Of The Rectangle By Using Class And Objects
+
+Dicription:- Class is User Defined Data type It is just like a Template or Blueprint that have Provision to Create Objects 
+and Object is the Runtime Entity it is an instance of the Class through which we can access the data member of class 
+By this Problem we know how to find area of rectangle by Using the Concept of class and Object 
+
+Explanation:- First We input the Value Of length and breadth and then make the Object of that Particular Class. through Object of class we can access the 
+Member of that Particular Class. we call the Method area that method for Calculating the Area of rectangle and then we simply Print that output on screen 
+
+Example 1:-
+Input Test case:- 
+Smaple Input:- Length=10
+               Breadth=12
+Sample Output:- The Area of Rectangle is  = 120 
+
+Example 2:-
+Input Test case:- 
+Smaple Input:- Length=20
+               Breadth=60
+Sample Output:- The Area of Rectangle is  = 1200
+
+Example 3:-
+Input Test case:- 
+Sample Input:- Length=1.2 
+               Breadth=2.01
+Sample output:- Exception in thread "main" java.util.InputMismatchException            
+
+               
