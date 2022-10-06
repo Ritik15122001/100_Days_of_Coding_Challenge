@@ -1,0 +1,25 @@
+Problem:- Finding The Area Of Cylinder By using Private and Public Variables and Using Getter and Setters.
+
+Input Test Case:- Input Must Be Integer 
+
+Sample Input:- radius=5, hieght=7;
+Sample Output:- 769.3
+
+Sample Input:- radius=10, hieght=14;
+Sample Output:- 6154.4
+
+
+Discription:- There are four  types of access modifiers in java 
+              1.Private 
+              2.Public
+              3.Protected
+              4.Default 
+Private:- it can access only within class no other class can access outside that particular class .
+Public :- It can Be access from outside the class 
+Protected:- It is Just Like a Private access modifier can`t be access from outside the class but it can be access the derived class of any class 
+Default:- it can be access within the that particular package 
+
+
+Explanation:- First we make another class called Cylinder and in this class there are a public variable and a Private variable and some getters & Setters 
+through which we can access the private variable from outside the class and then we make objects of cylinder class through getradius and gethieght we initiate the 
+private variable radius and hieght . there are one more method called surfacearea here we calculate the area of cylinder and get Output.
