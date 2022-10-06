@@ -1,0 +1,33 @@
+package com.company;
+class cylinder{
+    private int radius;
+    private int hieght;
+    public float surfacearea()
+    {
+       return (float) (3.14*getRadius()*getRadius()*getHieght());
+
+    }
+    public int getRadius() {
+        return radius;
+    }
+    public void setRadius(int radius) {
+        this.radius = radius;
+    }
+    public int getHieght() {
+        return hieght;
+
+    }
+    public void setHieght(int hieght) {
+        this.hieght = hieght;
+    }
+}
+public class practice96 {
+    public static void main(String[] args) {
+      cylinder mycyl = new cylinder();
+      mycyl.setHieght(5);
+      mycyl.setRadius(7);
+        System.out.println(mycyl.getHieght());
+        System.out.println(mycyl.getRadius());
+        System.out.println(mycyl.surfacearea());
+    }
+}
