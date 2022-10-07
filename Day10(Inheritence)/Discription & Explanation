@@ -24,3 +24,10 @@ Sample Input:= Name = "Ritik"
                
 Smaple Output :-  Name = Ritik
                   Id = 135       
+                  
+Sample Input:= Name = "Akash"
+                 Id = 186
+               
+               
+Smaple Output :-  Name = Akash
+                  Id = 186 
