@@ -1,0 +1,35 @@
+package com.company;
+class base{
+    String name;
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+}
+class derived extends base{
+    int id;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+}
+public class practice98 {
+    public static void main(String[] args) {
+     base name = new base();
+     name.setName("Ritik");
+        System.out.println("In Base class:-\n"+name.getName());
+        derived id = new derived();
+        id.setName("Sachin Ranjan");
+        id.setId(109);
+        System.out.println("In the Derived Class:- \n"+id.getName());
+        System.out.println(id.getId());
+    }
+}
