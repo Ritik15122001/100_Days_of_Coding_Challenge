@@ -1,0 +1,26 @@
+Problem:- To Find Name and Id by Using the Concept of Inheritence.
+
+Discription:- Inheritence is a Process in which one object aquires all the properties and Behaviours of 
+its Parents Through the extend Keyword in java which inherit the member of another class is called 
+derived class and the class whose member are inherited is called base class 
+There are Four types Of in heritence :-
+
+1.Single inheritence 
+2.Hierarchical Inheritence 
+3.Miltilevel Inheritence 
+4.Hybrid Inheritence 
+
+
+Explanation:- fisrt make a parent class called base class that conatin 
+'name' variable and another is child class that name is Derived class that contain 'Id'
+the derived class is inherited from base class so that it has the properties of base 
+class and then we make the object of base class and found desired output.
+
+
+Input Test Case:- Input Must be String or Integer Value
+Sample Input:= Name = "Ritik"
+               Id = 135
+               
+               
+Smaple Output :-  Name = Ritik
+                  Id = 135       
