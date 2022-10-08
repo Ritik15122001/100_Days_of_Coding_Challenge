@@ -1,0 +1,34 @@
+Discription:- A Constructor is a Special Member Function the constructor is invoked when ever an object of its an object of
+its class is created the used of constructor is to initialized the objects of its class a constructor that accepts no parameters is called the default constructor 
+the constructor function have same special characteristristics 
+
+Parameterized Constructor (Overloaded Constructor):- Parameterized constructor accepts parameters and 
+is used to assign these parameters to the data members of the class. There may be many
+definitions of the parameterized constructor depending upon the type and number of parameters passed
+to the constructor and so it is also called overloaded constructor.
+
+Default Constructor (No argument constructor):- A default constructor accepts no parameters. When no constructor is defined in the class, 
+compiler provides the default constructor.
+
+explanation:-first we make the class and and the  make a constructor & another constructor overloaded and then we craete a object of that particular class then 
+when we make the constructor the object is initilize at the time of creating of object then we initlize with parameter and then output is printed 
+
+Syntax:- 
+class ClassName {
+
+   ClassName() {
+   }
+   
+}
+
+Parameterized Constructor Synatx :- 
+class ClassName {
+
+   ClassName() {
+   }
+   
+   ClassName(Int a){
+   
+   }
+   
+}
