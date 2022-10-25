@@ -1,0 +1,30 @@
+SUPER KEYWORD:- The super keyword in Java refers to the immediate parent class reference.
+The super keyword is used to access the data members, methods as well as the constructor of the parent class
+
+
+It is used to refer to an instance variable of the immediate parent class.
+
+
+It is used to invoke a method of the immediate parent class.
+
+
+It is used to invoke a constructor of immediate parent class
+
+
+Explanation:-  the Child class extends the Parent class. Both have two instance variables
+In the Child class the print method calls the instance variables of the parent class using the super keyword.
+In comparison, the instance variables of child class don't need one. It doesn't matter whether the instance variable of 
+parent class and child class share the same name; they can hold different values and are not overridden
+the child class extends parent class. While creating an object of the child class, the constructor of the child class is called, 
+where the parent class constructor is invoked using the “super” keyword.
+
+
+Sample Input:- 14 , 3
+
+Sample Output:- i am the base over loadded constructor14
+                I am the derived  with 14 with 3
+                
+Sample Input:- 10 , 12 
+
+Sample Output:- i am the base over loadded constructor10
+                I am the derived  with 10 with 12
