@@ -1,0 +1,17 @@
+For Each Loop:- A for-each loop is a loop that can only be used on a collection of items. It will loop through the collection and each time 
+through the loop it will use the next item from the collection. It starts with the first item in the array (the one at index 0)
+and continues through in order to the last item in the array.
+
+
+Synatax:- 
+for (initialization; boolean-condition; step) {
+    statement;
+}
+
+For each iteration  the for-each loop takes each element of the collection and stores it in a loop variable. 
+Thus it executes the code written in the body of the loop for each element of the array or collection.
+
+Sample Input:- "Ritik","sachin","vivek","ayush"
+
+Sample Output:- Ritik	sachin	vivek	 ayush
+
