@@ -1,0 +1,52 @@
+package com.company;
+
+class details{
+    String name;
+    int id;
+    String address;
+    public void name(String name)
+    {
+        System.out.println(name);
+    }
+    public void id(int id)
+    {
+        System.out.println(id);
+    }
+    public void address(String address)
+    {
+        System.out.println(address);
+    }
+    public void name(String ...arr){
+        for (String b:arr)
+        {
+            System.out.print("\t"+b);
+
+        }
+        System.out.println("\n");
+    }
+    public void id(int ...arr)
+    {
+        for (int c :arr)
+        {
+
+            System.out.print("\t\t"+c);
+        }
+    }
+    public void address(String ...arr)
+    {
+        for (String d:arr)
+        {
+            System.out.print("\t"+d);
+        }
+        System.out.println("\n");
+    }
+}
+public class practice108 {
+    public static void main(String[] args) {
+        //System.out.println("Your Details are:");
+        details details = new details();
+        details.name("Ritik","sachin","vivek","ayush");
+        details.address("Bihar","rahui","patna","goa");
+        details.id(109,114,110,111);
+    }
+}
