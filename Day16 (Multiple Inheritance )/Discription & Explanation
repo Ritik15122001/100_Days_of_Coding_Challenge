@@ -1,0 +1,28 @@
+Multilevel Inheritence:- When a class already inherited by other class and then any other class is inherited by that class then we can say it is the concept 
+of multiple inheritence 
+
+Here we can see this concept by this diagram 
+
+
+                                    
+                                    Class A (Grand Parent Class)
+                                      ^
+                                      |
+                                    Class B  (Parent Class )
+                                      ^
+                                      |
+                                    Class C  (Child Class)
+                                    
+    Syntax:-
+    
+    class A { 
+... .. ... 
+};
+class B extends  A {
+... .. ...
+};
+class extends  B {
+... ... ...
+};
+
+
