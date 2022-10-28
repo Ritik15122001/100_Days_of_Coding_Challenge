@@ -1,0 +1,49 @@
+package com.company;
+
+import javax.lang.model.element.Name;
+
+abstract class vicheles {
+   abstract public void vichleName();
+}
+class car extends vicheles{
+
+    //@Override
+    public void vichleName() {
+        System.out.println("Car");
+    }
+}
+class bike extends vicheles{
+   // @Override
+    public void vichleName()
+    {
+        System.out.println("Bike");
+    }
+}
+class Cycle extends vicheles{
+    public void vichleName()
+    {
+        System.out.println("Cycle");
+    }
+    public void start(){
+        System.out.println("Start");
+    }
+    class bus extends Cycle{
+        public void vichleModel()
+        {
+            System.out.println("0001");
+        }
+
+    }
+}
+public class practice116 {
+    public static void main(String[] args) {
+        car A = new car();
+        A.vichleName();
+        bike Name = new bike();
+        Name.vichleName();
+        Cycle name = new Cycle();
+        name.vichleName();
+        name.start();
+       // Cycle.bus del = new Cycle.bus();  ----------- giving Error
+    }
+}
