@@ -1,0 +1,59 @@
+package com.company;
+interface camera{
+    void takeSnap();
+    void videorecord();
+    default void slowmo(){
+        System.out.println("Recording in slowmotion....");
+    }
+}
+interface wifi{
+    void network();
+    void connetcting();
+}
+interface call{
+    void calling();
+    void disconncect();
+}
+class mysmartphone implements camera,wifi,call{
+    @Override
+    public void takeSnap() {
+        System.out.println("Taking Snap......");
+    }
+
+    @Override
+    public void videorecord() {
+        System.out.println("Recording.....");
+    }
+
+    @Override
+    public void network() {
+        System.out.println("Availabe Network...");
+    }
+
+    @Override
+    public void connetcting() {
+        System.out.println("connecting...");
+    }
+
+    public void connecting(){
+        System.out.println("Connecting....");
+    }
+    public void calling(){
+        System.out.println("Calling....");
+    }
+
+    @Override
+    public void disconncect() {
+        System.out.println("disconnecting...");
+    }
+
+}
+public class practice118 {
+    public static void main(String[] args) {
+        mysmartphone realme = new mysmartphone();
+        realme.calling();
+        realme.disconncect();
+        realme.takeSnap();
+        realme.slowmo();
+    }
+}
