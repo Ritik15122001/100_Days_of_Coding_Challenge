@@ -1,0 +1,31 @@
+package com.company;
+abstract class  telephone{
+    abstract void ring();
+    abstract void lift();
+    abstract void disconnect();
+}
+class smarttelephone extends telephone{
+    void ring()
+    {
+        System.out.println("ringing...");
+    }
+    void lift()
+    {
+        System.out.println("lifting...");
+    }
+    void disconnect(){
+        System.out.println("Disconnecting....");
+    }
+    void network(){
+        System.out.println("connecting the netword...");
+    }
+
+}
+public class practice122 {
+    public static void main(String[] args) {
+        telephone obj = new smarttelephone();
+        obj.ring();
+        smarttelephone obj1 = new smarttelephone();
+        obj1.network();
+    }
+}
