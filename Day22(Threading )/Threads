@@ -1,0 +1,25 @@
+package com.company;
+class mythread extends Thread{
+    public void run(){
+        while(true) {
+            System.out.println("My Thread is running");
+            System.out.println("i am very happy");
+        }
+    }
+}
+class mythread1 extends Thread{
+    public void run(){
+        while(true) {
+            System.out.println("my thread 2 is running");
+            System.out.println("i am very sad");
+        }
+    }
+}
+public class practice124 {
+    public static void main(String[] args) {
+        mythread obj = new mythread();
+        mythread1 obj1=new mythread1();
+        obj.start();
+        obj1.start();
+    }
+}
