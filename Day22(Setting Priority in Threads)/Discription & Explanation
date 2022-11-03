@@ -1,0 +1,14 @@
+The setPriority() method of thread class is used to change the thread's priority. Every thread has a priority 
+which is represented by the integer number between 1 to 10.
+
+Thread class provides 3 constant properties:
+
+public static int MIN_PRIORITY: It is the maximum priority of a thread. The value of it is 1.
+
+public static int NORM_PRIORITY: It is the normal priority of a thread. The value of it is 5.
+
+public static int MAX_PRIORITY: It is the minimum priority of a thread. The value of it is 10.
+
+Syntax:-
+
+public final void setPriority(int a)  
