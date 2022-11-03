@@ -1,0 +1,29 @@
+package com.company;
+class thr extends Thread{
+    public thr(String name ){
+
+        super(name);
+    }
+    public void run(){
+        int i =15;
+        //while (true) {
+           // System.out.println("i am a thread");
+            System.out.println(this.getName());
+      //  }
+
+    }
+}
+public class practice126 {
+    public static void  main(String[] args) {
+      //  thr t = new thr("ritik");
+      //  System.out.println(t.getName());
+        thr t1 = new thr("sachin");
+        thr t2 = new thr("ayush");
+        thr t3 = new thr("chhotu");
+      t1.start();
+      t2.start();
+      t3.start();
+        t3.setPriority(Thread.MAX_PRIORITY);
+        //t1.setPriority(Thread.MIN_PRIORITY);
+    }
+}
