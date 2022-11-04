@@ -1,0 +1,29 @@
+The Exception Handling in Java is one of the powerful mechanism to handle the runtime errors so that the normal flow of the application can be maintained.
+
+In Java an exception is an event that disrupts the normal flow of the program. It is an object which is thrown at runtime.
+
+There are two Kinds of Exception
+1.Checked Exception 
+2.Unchecked Exception 
+
+List of Checked Exception:-
+
+IOException
+
+SQLException
+
+ClassNotFoundException
+
+InstantiationException
+
+NoSuchMethodException
+
+List Of Unchecked Exception:-
+
+RuntimeException
+
+NullPointerException: 
+
+ArithmeticException
+
+ArrayIndexOutOfBoundsException
