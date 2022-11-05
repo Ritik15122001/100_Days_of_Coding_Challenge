@@ -1,0 +1,43 @@
+package com.company;
+class RadiusException extends Exception{
+    @Override
+    public String toString() {
+        return "Radius Can`t be Taken as Negative";
+    }
+
+    @Override
+    public String getMessage() {
+        return "Radius Can`t Be taken as Negative";
+    }
+}
+class thro{
+    public static double area(int r) throws RadiusException{
+        if(r<0){
+            throw new RadiusException();
+        }
+        return Math.PI * r * r;
+    }
+    public static double divide(int a ,int  b) throws ArithmeticException{
+        int result;
+        return result = a/b;
+    }
+}
+public class practice132 {
+    public static void main(String[] args) {
+       /* thro obj = new thro();
+        try{
+            obj.divide(5, 0);
+        }catch (Exception e){
+            System.out.println("Exception");
+        }*/
+
+        thro area = new thro();
+        try {
+            System.out.println(area.area(-5));
+        }catch (Exception e){
+            System.out.println(e.toString());
+        }
+
+
+    }
+}
