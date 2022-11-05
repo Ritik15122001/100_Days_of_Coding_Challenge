@@ -1,0 +1,23 @@
+Java Custom Exception:- Java Provides Features that We Can Create Our Own Exception That is 
+Known as Java Custom Excetion For Creating Our Own Exception We Have to Inherite the That Class 
+from Exception Class that is Known as User Defined or Custom Exception 
+
+We can Create our Own Exception as Per User Requirement 
+
+Java exceptions cover almost all the general type of exceptions that may occur in the programming
+But Sometime we Need to create Our own Custom Exception 
+
+Following are few of the reasons to use custom exceptions:
+
+To catch and provide specific treatment to a subset of existing Java exceptions.
+
+Business logic exceptions: These are the exceptions related to business logic and 
+workflow. It is useful for the application users or the developers to understand the exact problem.
+
+Example of Custome Exception
+
+public class WrongFileNameException extends Exception {  
+    public WrongFileNameException(String errorMessage) {  
+    super(errorMessage);  
+    }  
+}  
