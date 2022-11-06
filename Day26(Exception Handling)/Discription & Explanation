@@ -1,0 +1,39 @@
+Exception Handling:- Java Provide the Feature of Exception Handling 
+When an Exception occurs the normal flow of the program is disrupted and the program terminates abnormally
+
+different approaches to handle exceptions in Java.
+
+1.try...catch block
+
+2.finally block
+
+3.throw and throws keyword
+
+Following are some scenarios where an exception occurs.
+
+A user has entered an invalid data.
+
+A file that needs to be opened cannot be found.
+
+A network connection has been lost in the middle of communications or the JVM has run out of memory.
+
+1.try...catch block
+Syntax:-
+try {
+  // code
+}
+catch(Exception e) {
+  // code
+}
+
+2.finally block
+Syntax:-
+try {
+  //code
+}
+catch (ExceptionType1 e1) { 
+  // catch block
+}
+finally {
+  // finally block always executes
+}
