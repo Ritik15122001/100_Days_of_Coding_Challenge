@@ -1,0 +1,39 @@
+package com.company;
+
+import java.util.Scanner;
+
+class ExceptionHandle extends Exception{
+    @Override
+    public String toString() {
+        return "Parameters Can`t be in negative";
+    }
+
+    @Override
+    public String getMessage() {
+        return "Parameters Can`t be in negative";
+    }
+}
+class reactangle{
+    void rectangle(int l, int b) throws ExceptionHandle{
+        if (l<0){
+            throw new ExceptionHandle();
+        }
+        System.out.println(l*b);
+    }
+}
+public class practice133 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Length of the rectangle:");
+        int l = sc.nextInt();
+        System.out.println("Enter the breadth of the rectangle:");
+        int b = sc.nextInt();
+        reactangle obj = new reactangle();
+        try{
+            obj.rectangle(l,b);
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+        }
+
+    }
+}
