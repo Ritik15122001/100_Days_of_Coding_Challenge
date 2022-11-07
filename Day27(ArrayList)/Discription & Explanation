@@ -1,0 +1,28 @@
+ArrayList:- ArrayList is the Dynamic Array it is Totally Different From Traditional Array it Much More flexible than Traditional Array we can Add or Remove element anytime 
+By using ArrayList in ArrayList There is No Size Limit.It is found in the java.util package
+
+The important points about the Java ArrayList class are:
+
+Java ArrayList class can contain duplicate elements.
+
+Java ArrayList class maintains insertion order.
+
+Java ArrayList class is non synchronized.
+
+Java ArrayList allows random access because the array works on an index basis.
+
+In ArrayList, manipulation is a little bit slower than the LinkedList in Java because a lot of shifting needs to occur if any element is removed from the array list.
+
+Syntax:-
+ArrayList<Integer> al = new ArrayList<Integer>(); 
+
+ArrayList Methods:-
+
+add(int index, Object element)
+addAll(Collection C)
+clear()
+clone()
+indexOf(Object O)
+isEmpty?()
+remove?(int index)
+
