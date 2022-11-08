@@ -1,0 +1,30 @@
+package com.company;
+class invalidinputException extends Exception{
+    public String toString(){
+        return "invalid input";
+    }
+}
+class customcalucator{
+    public int add(int a,int b){
+        return a+b;
+    }public int sub(int a,int b) throws invalidinputException {
+        if (a==0){
+           throw new invalidinputException();
+        }
+        return a-b;
+    }public int mul(int a,int b){
+        return a*b;
+    }public int div(int a,int b)throws invalidinputException{
+        if (a==0){
+            throw  new invalidinputException();
+        }
+        return a/b;
+    }
+}
+public class practice137 {
+    public static void main(String[] args) throws invalidinputException {
+        customcalucator c = new customcalucator();
+        System.out.println( c.sub(0,6));
+        System.out.println( c.div(0,6));
+    }
+}
