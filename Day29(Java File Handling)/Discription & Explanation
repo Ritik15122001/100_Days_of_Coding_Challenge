@@ -1,0 +1,31 @@
+Java File Handling:- in Java  There are File Class with the help of file class We can work with files . this class is used by creating an 
+object of the class and then specifying the name of the file.
+
+In Every Programming Language File Handling  is Essential Concept of Programming through We can Store Data Permanantly.
+
+File Handling Means Reading And writing the Data 
+
+Through file Handling We can Perform various operations on Data by Storing Data Permanantly 
+
+These Operations are :- 
+1.Reading Data 
+2.Writing Data 
+3.Insertion 
+4.Updation 
+5.Deletion 
+etc
+
+In Java, the concept Stream is used in order to perform I/O operations on a file. Basically a Sequence of Data is Known as Stream
+
+Java Uses  Various Methods to perform Operations on File 
+
+These Methods are 
+
+1.read()	
+2	read(byte[] array)
+3	mark()	
+4	available()	
+5	markSupported()	
+6	reset()	
+7	skips()	 
+8	close()
