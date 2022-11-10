@@ -1,0 +1,18 @@
+String:- String is the Set of Characters .string is basically an object that represents sequence of char values. An array of characters works same as Java string
+
+char[] ch={'r','i','t','i','k'};  
+
+String s=new String(ch);  
+
+String s="ritik";  
+
+
+
+Explanation:-First We have to take input of 5 String by Using For Loop and then we use nested of for loop after that we have to compare previous character of element
+then and sort the strings and after that we print all the strings 
+
+
+
+Java String class provides a lot of methods to perform operations on strings such as compare(), concat(), equals(), split(), length(), replace(), 
+compareTo(), intern(), substring() etc.
+
