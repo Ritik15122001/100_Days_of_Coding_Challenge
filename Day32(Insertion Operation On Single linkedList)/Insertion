@@ -1,0 +1,38 @@
+package com.compant.java1;
+public class LL1 {
+    private  Node head;
+    class Node{
+        int data;
+        Node next;
+        Node(int data){
+            this.data=data;
+            this.next=null;
+        }
+    }
+    public  void insertfirst(int data){
+        Node newNode = new Node(data);
+        if (head==null){
+           head = newNode;
+        }
+        newNode.next=head;
+        head=newNode;
+    }
+    public void  printdata(){
+        Node currentNode=head;
+        if (head==null){
+            System.out.println("List is empty");
+
+        }
+        while (currentNode!=null){
+            System.out.print("\t"+currentNode.data);
+            currentNode=currentNode.next;
+        }
+    }
+    public static void main(StringOperation[] args) {
+     LL1 list = new LL1();
+     list.insertfirst(10);
+     list.insertfirst(12);
+     list.insertfirst(13);
+        list.printdata();
+    }
+}
