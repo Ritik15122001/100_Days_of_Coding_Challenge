@@ -1,0 +1,28 @@
+Linked List :- Linked List can be defined as collection of objects called nodes that are randomly stored in the memory.
+
+A node contains two fields i.e. data stored at that particular address and the pointer which contains the address of the next node in the memory.
+
+The last node of the list contains pointer to the null.
+
+Explanation :- in this program we have to insert the element at first for the inserting the element first we have to check the head is null or not if head is null then 
+the list is empty else we put the head in newnode next and put new node in head. 
+in this way we insert the element at first in single linked list  
+
+Types Of Linked List:- 
+
+Single Linked List − Item navigation is forward only.
+
+Doubly Linked List − Items can be navigated forward and backward.
+
+Circular Linked List − Last item contains link of the first element as next and the first element has a link to the last element as previous.
+
+PseudoCode:-
+
+Node newNode = new Node(data);
+        if (head==null){
+           head = newNode;
+        }
+        newNode.next=head;
+        head=newNode;
+        
+        
