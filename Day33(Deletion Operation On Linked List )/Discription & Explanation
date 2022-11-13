@@ -1,0 +1,24 @@
+Deleting a node from the beginning of the list is the simplest operation of all. It just need a few adjustments in the node pointers. 
+Since the first node of the list is to be deleted, therefore, we just need to make the head, point to the next of the head.
+
+How do you delete an element from a linked list?
+
+Delete from a Linked List
+Delete from beginning. Point head to the second node head = head->next;
+
+Delete from end. Traverse to second last element. Change its next pointer to null struct node* temp = head;
+while(temp->next->next!=NULL){ temp = temp->next; } temp->next = NULL;
+
+
+Delete from middle.
+
+
+PseudoCode:-Node currentNode = head;
+
+    If head==null  then,
+
+        System.out.println("List is Empty");
+
+    Else 
+
+        head=currentNode.next;
