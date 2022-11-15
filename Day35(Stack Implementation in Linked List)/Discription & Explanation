@@ -1,0 +1,30 @@
+Stack is a linear data structure which follows a particular order in which the operations are performed. 
+The order may be LIFO(Last In First Out) or FILO(First In Last Out).
+
+A Stack is a linear data structure that follows the LIFO (Last-In-First-Out) principle. Stack has one end, whereas the Queue has two ends (front and rear). 
+
+
+The following are some common operations implemented on the stack:
+
+push(): When we insert an element in a stack then the operation is known as a push. If the stack is full then the overflow condition occurs.
+
+pop(): When we delete an element from the stack, the operation is known as a pop. If the stack is empty means that no element exists in the 
+stack, this state is known as an underflow state.
+
+
+Stack implementation in linked List :- all the singly linked list operations should be performed based on Stack operations LIFO(last in first out)
+
+Algorithm:- Step 1 - Include all the header files which are used in the program. And declare all the user defined functions.
+Step 2 - Define a 'Node' structure with two members data and next.
+Step 3 - Define a Node pointer 'top' and set it to NULL.
+Step 4 - Implement the main method by displaying Menu with list of operations and make suitable function calls in the main method.
+
+
+push(value) - Inserting an element into the Stack
+We can use the following steps to insert a new node into the stack...
+
+Step 1 - Create a newNode with given value.
+Step 2 - Check whether stack is Empty (top == NULL)
+Step 3 - If it is Empty, then set newNode → next = NULL.
+Step 4 - If it is Not Empty, then set newNode → next = top.
+Step 5 - Finally, set top = newNode.
