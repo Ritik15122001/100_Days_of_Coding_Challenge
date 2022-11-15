@@ -1,0 +1,53 @@
+package com.compant.java1;
+
+public class StackLL {
+    Node Top;
+    class Node {
+        int data;
+        Node next;
+
+        Node(int data) {
+            this.data = data;
+            this.next = null;
+        }
+
+    }
+    public void Push(int data) {
+        Node newnode = new Node(data);
+        if (Top == null) {
+            Top = newnode;
+        } else {
+            newnode.next = Top;
+            Top = newnode;
+        }
+    }
+
+    public void Pop() {
+        if (Top == null) {
+            System.out.println("Underflow");
+            return;
+        }
+
+        Top = Top.next;
+    }
+    public void print() {
+        Node curr = Top;
+        if (Top == null) {
+            System.out.println("Stack is UnderFlow!");
+        }
+        while (curr != null) {
+            System.out.print("\t" + curr.data);
+            curr = curr.next;
+        }
+        System.out.println();
+    }
+    public static void main(StringOperation[] args) {
+        StackLL stack = new StackLL();
+        stack.Push(13);
+//        stack.Push(12.2);
+        stack.Push(200);
+        stack.print();
+//        stack.Pop();
+//        stack.print();
+    }
+}
