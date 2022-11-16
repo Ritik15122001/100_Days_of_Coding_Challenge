@@ -1,0 +1,89 @@
+package com.compant.java1;
+
+
+class StackCCl {
+    private Node Top;
+    private Node tail;
+
+    class  Node{
+        int data;
+        Node next;
+        Node(int data){
+            this.data=data;
+            this.next=null;
+        }
+    }
+    public void Push(int data){
+        Node newnode = new Node(data);
+        if (Top==null){
+            Top=newnode;
+            tail=newnode;
+            newnode.next=Top;
+        }else {
+            newnode.next=Top;
+            Top=newnode;
+            tail.next=Top;
+
+        }
+    }
+    public void Pop() {
+
+        if(Top == null) {
+            return;
+        }
+        else {
+
+            if(Top != tail ) {
+                Top = Top.next;
+                tail.next = Top;
+            }
+
+            else {
+                Top = tail = null;
+            }
+        }
+    }
+
+
+    public void display() {
+        Node current = Top;
+        if(Top== null) {
+            System.out.println("List is empty");
+        }
+        else {
+
+            do{
+                //Prints each node by incrementing pointer.
+                System.out.print(" "+ current.data);
+                current = current.next;
+            }while(current != Top);
+            System.out.println();
+        }
+    }
+
+
+    public void printdata(){
+        Node currentnode = Top;
+        if (Top==null){
+            System.out.println("List is Empty");
+        }else {
+            do {
+                System.out.print("\t"+currentnode.data);
+                currentnode=currentnode.next;
+            }while (currentnode!=Top);
+        }
+        System.out.println();
+    }
+
+    public static void main(StringOperation[] args) {
+//        StackCCl list = new StackCCl();
+//        list.Push(100000000000);
+//        list.Push(12000000000000);
+//        list.Push(11400000000000000);
+//        list.printdata();
+//        System.out.println("after Deletion:");
+//        list.Pop();
+//        list.printdata();
+    }
+}
+
