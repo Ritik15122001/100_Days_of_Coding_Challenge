@@ -1,0 +1,28 @@
+Circular Linkedlist:- The circular linked list is a linked list where all nodes are connected to form a circle. In a circular linked list, the first node and the last node are connected to 
+each other which forms a circle. There is no NULL at the end.
+
+In a circular linked list, the insertion operation can be performed in three ways. They are as follows...
+
+Inserting At Beginning of the list
+Inserting At End of the list
+Inserting At Specific location in the list
+
+Inserting At Beginning of the list
+We can use the following steps to insert a new node at beginning of the circular linked list...
+
+Step 1 - Create a newNode with given value.
+Step 2 - Check whether list is Empty (head == NULL)
+Step 3 - If it is Empty then, set head = newNode and newNode→next = head .
+Step 4 - If it is Not Empty then, define a Node pointer 'temp' and initialize with 'head'.
+Step 5 - Keep moving the 'temp' to its next node until it reaches to the last node (until 'temp → next == head').
+Step 6 - Set 'newNode → next =head', 'head = newNode' and 'temp → next = head'.
+
+Inserting At End of the list
+We can use the following steps to insert a new node at end of the circular linked list...
+
+Step 1 - Create a newNode with given value.
+Step 2 - Check whether list is Empty (head == NULL).
+Step 3 - If it is Empty then, set head = newNode and newNode → next = head.
+Step 4 - If it is Not Empty then, define a node pointer temp and initialize with head.
+Step 5 - Keep moving the temp to its next node until it reaches to the last node in the list (until temp → next == head).
+Step 6 - Set temp → next = newNode and newNode → next = head.
