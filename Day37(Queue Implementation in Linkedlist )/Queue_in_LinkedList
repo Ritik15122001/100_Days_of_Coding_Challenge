@@ -1,0 +1,60 @@
+package com.compant.java1;
+
+public class QueueLL {
+       private Node front;
+        class Node {
+            int data;
+            Node next;
+
+            Node(int data) {
+                this.data = data;
+                this.next = null;
+            }
+
+        }
+        public void Inqueue(int data){
+        Node newNode =new Node(data);
+        if (front==null){
+            front= newNode;
+            return;
+        }
+        Node currNode = front;
+        while (currNode.next!=null){
+            currNode=currNode.next;
+        }
+        currNode.next=newNode;
+    }
+        public void Dequeue() {
+            if (front == null) {
+                System.out.println("Underflow");
+                return;
+            }
+
+            front = front.next;
+        }
+        public void print() {
+             Node curr = front;
+            if (front == null) {
+                System.out.println("List is Empty");
+            }
+            while (curr != null) {
+                System.out.print("\t" + curr.data);
+                curr = curr.next;
+            }
+            System.out.println();
+        }
+        public static void main(StringOperation[] args) {
+            QueueLL stack = new QueueLL();
+            stack.Inqueue(0);
+          //  stack.Inqueue(a);
+            stack.Inqueue(10);
+            stack.Inqueue(35);
+            stack.print();
+            System.out.println("Sucessfully Inserted");
+            stack.Dequeue();
+            System.out.println("After Dequeue");
+            stack.print();
+        }
+    }
+
+
