@@ -1,0 +1,22 @@
+A queue is defined as a linear data structure that is open at both ends and the operations are performed in First In First Out (FIFO) order
+
+In a Queue data structure, we maintain two pointers, front, and rear. The front points to the first item of the queue and rear points to the last item.
+
+enQueue() This operation adds a new node after rear and moves rear to the next node.
+deQueue() This operation removes the front node and moves front to the next node.
+
+Follow the below steps to Implement the queue using linked list:
+
+Create a Struct QNode with data members integer data and QNode* next.
+A parameterized constructor that takes an integer x value as a parameter and sets data equal to x and next as NULL.
+Create a struct Queue with data members QNode front and rear. 
+Default constructor Queue() sets front and rear as NULL.
+Enqueue Operation with parameter x:
+Initialize QNode* temp with data = x;
+If rear is set to NULL then set front and rear to temp and return.
+Else set rear‘s next to temp and then move rear to temp.
+Dequeue Operation:
+If front is set to NULL return.
+Initialize QNode* temp with front and set front to its next.
+If front is equal to NULL then set rear to NULL.
+Delete temp.
