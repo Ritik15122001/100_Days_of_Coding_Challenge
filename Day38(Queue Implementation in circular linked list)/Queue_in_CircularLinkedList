@@ -1,0 +1,85 @@
+package com.compant.java1;
+
+public class QueueCCL {
+    private Node front;
+    private Node rear;
+
+    class  Node{
+        int data;
+        Node next;
+        Node(int data){
+            this.data=data;
+            this.next=null;
+        }
+    }
+    public void enqueue(int data){
+        Node newnode = new Node(data);
+        if (front==null){
+            front=newnode;
+            rear=newnode;
+            newnode.next=front;
+        }else {
+            newnode.next=front;
+            front=newnode;
+            rear.next=front;
+
+        }
+    }
+
+    public void dequeue() {
+
+        if(front == null) {
+            return;
+        }
+        else {
+
+            if(front != rear ) {
+                Node current = front;
+
+                while(current.next != rear) {
+                    current = current.next;
+                }
+
+                rear = current;
+
+                rear.next = front;
+            }
+
+            else {
+                front = rear = null;
+            }
+        }
+    }
+
+
+
+
+
+
+    public void printdata(){
+        Node currentnode = front;
+        if (front==null){
+            System.out.println("List is Empty");
+        }else {
+            do {
+                System.out.print("\t"+currentnode.data);
+                currentnode=currentnode.next;
+            }while (currentnode!=front);
+        }
+        System.out.println();
+    }
+
+    public static void main(StringOperation[] args) {
+        QueueCCL list = new QueueCCL();
+       // list.enqueue(123133335612);
+        list.enqueue(124);
+        list.enqueue(146);
+        list.enqueue(177);
+        list.enqueue(361);
+        System.out.println("Insert Sucessfully!");
+        list.printdata();
+        list.dequeue();
+        System.out.println("Delete sucessfully");
+        list.printdata();
+    }
+}
