@@ -1,0 +1,30 @@
+A queue is defined as a linear data structure that is open at both ends and the operations are performed in First In First Out (FIFO) order
+
+In a Queue data structure, we maintain two pointers, front, and rear. The front points to the first item of the queue and rear points to the last item.
+
+enQueue() This operation adds a new node after rear and moves rear to the next node.
+deQueue() This operation removes the front node and moves front to the next node
+
+
+enqueue(data)
+Create a struct node type node.
+Insert the given data in the new node data section and NULL in address section.
+If Queue is empty then initialize front and rear from new node.
+Queue is not empty then initialize rear next and rear from new node.
+New node next initialize from front
+
+dequeue()
+Check if queue is empty or not.
+If queue is empty then dequeue is not possible.
+Else Initialize temp from front.
+If front is equal to the rear then initialize front and rear from null.
+Print data of temp and free temp memory.
+If there is more than one node in Queue then make front next to front then initialize rear next from front.
+Print temp and free temp.
+
+
+print()
+Check if there is some data in the queue or not.
+If the queue is empty print “No data in the queue.”
+Else define a node pointer and initialize it with front.
+Print data of node pointer until the next of node pointer becomes NULL.
