@@ -1,0 +1,45 @@
+/*A string is called a palindrome string if the reverse of that string is the same as the original string. For example, radar , level , etc.
+Similarly, a number that is equal to the reverse of that same number is called a palindrome number. For example, 3553, 12321, etc.
+
+Sample Input:-RAR
+Sample Output:-palindrome
+
+Sample Input:-Ritik 
+
+Sample Output:-Not palindrome
+
+*/
+
+
+
+
+
+package com.company;
+
+import java.util.Scanner;
+
+public class palindrome {
+
+    public static void main(String[] args) {
+
+        String s1,s2="";
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter The String:");
+        s1=sc.nextLine();
+        
+        for (int i=s1.length()-1;i>=0;i--){
+            s2=s2+s1.charAt(i);
+        }
+
+//        System.out.println(s2);
+//        System.out.println(s2);
+
+        if (s1.compareTo(s2)==0){
+            System.out.println("palindrome");
+        }
+        else {
+            System.out.println("Not palindrome");
+        }
+
+    }
+}
