@@ -1,0 +1,35 @@
+/*Java provides a new method forEach() to iterate the elements. It is defined in Iterable and Stream interface. It is a default method defined in the Iterable interface. 
+Collection classes which extends Iterable interface can use forEach loop to iterate elements.
+
+
+*/
+
+package com.company;
+import java.util.Scanner;
+public class foreach {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int [] list = new int[5];
+        for (int i=0;i<list.length;i++){
+            System.out.println("Enter The numbers:");
+            list[i]=sc.nextInt();
+        }
+        System.out.println("The Number in The List");
+        for (int a:list){
+            System.out.println(a);
+        }
+        System.out.println("enter a number for searching:");
+        int search = sc.nextInt();
+        int c =0;
+        for (int s :list){
+            if (search==s){
+                System.out.println(s+" this number is in list");
+                c=1;
+            }
+        }
+        if (c==0){
+            System.out.println("this number is not in list");
+        }
+
+    }
+}
