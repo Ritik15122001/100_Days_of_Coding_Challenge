@@ -1,0 +1,87 @@
+
+Sample Output:-
+Enter Your Guess in Capital Letters:
+A
+Character Too Low!
+Enter Your Guess in Capital Letters:
+D
+Character Too Low!
+Enter Your Guess in Capital Letters:
+G
+Character Too Low!
+Enter Your Guess in Capital Letters:
+K
+Character Too Low!
+Enter Your Guess in Capital Letters:
+M
+Character Too Low!
+Enter Your Guess in Capital Letters:
+O
+Character Too Low!
+Enter Your Guess in Capital Letters:
+U
+Character Too Low!
+Enter Your Guess in Capital Letters:
+X
+Congratulation! You Guessesd Right Number
+Your Marks is 8
+
+
+
+
+
+
+package com.compant.java1;
+
+
+import java.util.Random;
+import java.util.Scanner;
+
+class Agame{
+    char alpha;
+    String userinput;
+    int  marks=0;
+    Agame()
+    {
+        Random r = new Random();
+        alpha=(char)(r.nextInt(26) + 'A');
+    }
+
+    public void Userinput() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Your Guess in Capital Letters:");
+        userinput= sc.nextLine();
+
+    }
+    boolean iscorrectnumber()
+    {
+        marks++;
+        if (userinput.compareTo(String.valueOf(alpha))==0)
+        {
+            System.out.println("Congratulation! You Guessesd Right Number");
+            return true;
+        }
+        else if (userinput.compareTo(String.valueOf(alpha))>0)
+        {
+            System.out.println("Character Too High!");
+        }
+        else if (userinput.compareTo(String.valueOf(alpha))<0)
+        {
+            System.out.println("Character Too Low!");
+        }
+        return false;
+    }
+}
+public class alphagame {
+    public static void main(String[] args) {
+        Agame g = new Agame();
+        boolean b=false;
+        while (!b) {
+            g.Userinput();
+            b=g.iscorrectnumber();
+        }
+        System.out.println("Your Marks is "+g.marks);
+    }
+
+}
+
