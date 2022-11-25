@@ -1,0 +1,83 @@
+package com.compant.java1;
+import java.util.Scanner;
+class bank{
+    private  long Accno;
+    private String Cusname;
+    private double Balance;
+    void create(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Your Name:");
+        Cusname = sc.nextLine();
+        System.out.println("Enter Your Account Number:");
+        Accno=sc.nextLong();
+        System.out.println("Enter The Amount U Deposite First:");
+        Balance = sc.nextDouble();
+    }
+    void display(){
+        System.out.println("Account Number:"+Accno);
+        System.out.println("Customer Name:"+Cusname);
+        System.out.println("Balance in Account:"+Balance);
+    }
+    void withdrawal(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Account Number:");
+        long acc= sc.nextLong();
+        if (Accno==acc){
+            System.out.println(Cusname);
+            System.out.println(Balance);
+        }
+        System.out.println("Enter The Amount of withdrawal:");
+        double wd = sc.nextDouble();
+        if (wd<Balance){
+            Balance=Balance-wd;
+            System.out.println("Withrwal Successfully!");
+            System.out.println("Your Current Account Balance is:"+Balance);
+        }else {
+            System.out.println("Insufficiant Balance!");
+        }
+    }
+    void deposite(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter The Amount of Deposite:");        double dp= sc.nextDouble();
+        Balance = Balance+dp;
+        System.out.println("Deposite successfully!");
+        System.out.println("Your Current Account Balance is:"+Balance);
+    }
+    void checkbalance(){
+        System.out.println("Your Current Account Balance is:"+Balance);
+
+    }
+}
+class bankQ6 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        bank customer = new bank();
+        System.out.print("**************WelCome To Our Bank*************\n");
+        customer.create();
+        System.out.println("Enter Your Choice(1.View Your Account/2.Deposite/3.Withdrwal/4.Check Your balance/5.Exit):");
+        int choice = sc.nextInt();
+        switch (choice) {
+            case 1:
+                customer.display();
+                break;
+            case 2:
+                customer.deposite();
+                break;
+            case 3:
+                customer.withdrawal();
+                break;
+            case 4:
+                customer.checkbalance();
+                break;
+            case 5:
+                break;
+            default:
+                System.out.println("Invalid Choice!");
+        }
+
+    }
+}
+
+
+
+
