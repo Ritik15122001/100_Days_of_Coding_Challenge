@@ -1,0 +1,45 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+
+public static Scanner sc = new Scanner(System.in);
+    public static int B = getValB();
+    public static int H = getValH();
+    public static boolean flag = getValFlag();
+    private static int getValB()
+    {
+        return sc.nextInt();
+    }
+        private static int getValH()
+    {
+        return sc.nextInt();
+    }
+    private static boolean getValFlag()
+    {
+        try {
+            if (H > 0 && B > 0) 
+                return true;
+            else 
+                throw new Exception("Breadth and height must be positive");
+                
+        } catch (Exception e) {
+            System.out.println(e);
+            return false;
+        }
+    }
+
+public static void main(String[] args){
+		if(flag){
+			int area=B*H;
+			System.out.print(area);
+		}
+		
+	}//end of main
+
+}//end of class
+
