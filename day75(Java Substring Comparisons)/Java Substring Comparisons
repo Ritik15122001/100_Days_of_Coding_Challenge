@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Solution {
+
+    public static String getSmallestAndLargest(String s, int k) {
+        String smallest = "";
+        String largest = "";
+        
+ int size = s.length();
+        boolean firstTime = true;
+        
+        for(int x=k; x<=size; x++) {
+            String substr = s.substring(x-k, x);
+            if (firstTime) {
+                smallest = substr;
+                largest = substr;
+                firstTime = false;
+            }
+            else {
+                smallest = (substr.compareTo(smallest) < 0) ? substr : smallest;
+                largest = (substr.compareTo(largest) > 0) ? substr : largest;
+            }
+        }
+
+        
+        return smallest + "\n" + largest;
+    }
+
