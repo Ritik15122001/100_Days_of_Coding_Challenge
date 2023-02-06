@@ -1,0 +1,91 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+class Result {
+
+
+  public static int getTotalX(List<Integer> a, List<Integer> b) {
+    // Write your code here
+    int gcdNumber = Collections.max(b);
+    int lcmNumber = Collections.max(a);
+    int total = 0;
+        for(int i = 0; i < b.size(); i++){
+            gcdNumber = gcd(gcdNumber, b.get(i));
+        }
+        for(int i = 0; i < a.size(); i++){
+            lcmNumber = lcm(lcmNumber,a.get(i)); 
+        }
+        System.out.println(gcdNumber);
+        System.out.println(lcmNumber);
+        if( gcdNumber % lcmNumber == 0){
+            int count = 1;
+            while(gcdNumber>=(lcmNumber*count)){
+                if( (gcdNumber % (lcmNumber * count)) == 0){
+                    total++;
+                }
+                count++;
+            }
+        }
+        System.out.println(total);
+        return total;
+
+    }
+    static int gcd(int a, int b)
+    {
+        if (a == 0)
+            return b;
+        return gcd(b % a, a);
+    }
+    
+    // function to calculate
+    // lcm of two numbers.
+    static int lcm(int a, int b)
+    {
+        return (a * b) / gcd(a, b);
+    }
+
+}
+
+public class Solution {
+    public static void main(String[] args) throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+
+        String[] firstMultipleInput = bufferedReader.readLine().replaceAll("\\s+$", "").split(" ");
+
+        int n = Integer.parseInt(firstMultipleInput[0]);
+
+        int m = Integer.parseInt(firstMultipleInput[1]);
+
+        String[] arrTemp = bufferedReader.readLine().replaceAll("\\s+$", "").split(" ");
+
+        List<Integer> arr = new ArrayList<>();
+
+        for (int i = 0; i < n; i++) {
+            int arrItem = Integer.parseInt(arrTemp[i]);
+            arr.add(arrItem);
+        }
+
+        String[] brrTemp = bufferedReader.readLine().replaceAll("\\s+$", "").split(" ");
+
+        List<Integer> brr = new ArrayList<>();
+
+        for (int i = 0; i < m; i++) {
+            int brrItem = Integer.parseInt(brrTemp[i]);
+            brr.add(brrItem);
+        }
+
+        int total = Result.getTotalX(arr, brr);
+
+        bufferedWriter.write(String.valueOf(total));
+        bufferedWriter.newLine();
+
+        bufferedReader.close();
+        bufferedWriter.close();
+    }
+}
